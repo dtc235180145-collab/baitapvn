@@ -1,119 +1,197 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dịch Vụ Facebook - Đặng Minh Phương</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <div class="page">
-        <!-- Sidebar Bên Trái -->
-        <aside class="sidebar">
-            <div class="profile-box">
-                <div class="avatar">ĐMP</div>
-                <h1>Đặng Minh Phương</h1>
-                <p class="role">Dịch Vụ Facebook Uy Tín</p>
-            </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-            <section>
-                <h2>Liên Hệ / Hỗ Trợ</h2>
-                <ul class="info-list">
-                    <li><span>📍</span> Địa chỉ: Thái Nguyên, Việt Nam</li>
-                    <li><span>📞</span> Hotline / Zalo: 0326528628</li>
-                    <li><span>✉️</span> Email: dtc235180145@ictu.edu.vn</li>
-                    <li><span>⏰</span> Giờ làm việc: 24/7 (Cả lễ, Tết)</li>
-                </ul>
-            </section>
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+    line-height: 1.7;
+}
 
-            <section>
-                <h2>Cam Kết Dịch Vụ</h2>
-                <ul class="info-list">
-                    <li><span>✅</span> Bảo mật tuyệt đối thông tin khách hàng</li>
-                    <li><span>⚡</span> Tốc độ xử lý nhanh chóng, an toàn</li>
-                    <li><span>🔄</span> Bảo hành dài hạn & Hoàn tiền nếu lỗi</li>
-                    <li><span>🎯</span> Nguồn lực thật 100% Việt Nam</li>
-                </ul>
-            </section>
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    width: 100%;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
 
-            <section>
-                <h2>Phương Thức Thanh Toán</h2>
-                <ul class="info-list">
-                    <li><span>💳</span> Chuyển khoản ngân hàng 24/7</li>
-                    <li><span>📲</span> Ví điện tử MoMo / ZaloPay</li>
-                </ul>
-            </section>
-        </aside>
+/* Sidebar bên trái */
+.sidebar {
+    flex: 1 1 320px;
+    background: #0f172a;
+    padding: 35px 25px;
+    border-right: 1px solid #334155;
+}
 
-        <!-- Nội Dung Chính Bên Phải -->
-        <main class="main-content">
-            <section>
-                <h2>GIỚI THIỆU DỊCH VỤ</h2>
-                <p>
-                    Chào mừng bạn đến với hệ thống Dịch Vụ Facebook chuyên nghiệp của <strong>Đặng Minh Phương</strong> tại Thái Nguyên. Với kinh nghiệm nhiều năm trong lĩnh vực Marketing và Xử lý sự cố Facebook, chúng tôi tự hào cung cấp các giải pháp toàn diện giúp tối ưu hóa kênh bán hàng, tăng tương tác, xây dựng thương hiệu cá nhân/doanh nghiệp và bảo mật tài khoản an toàn nhất.
-                </p>
-            </section>
+.profile-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-            <section>
-                <h2>DANH MỤC DỊCH VỤ CHI TIẾT</h2>
-                
-                <div class="service-item">
-                    <h3>1. Tăng Tương Tác & Tăng Follow Bán Hàng</h3>
-                    <ul>
-                        <li>Tăng Like, Follow Trang cá nhân / Fanpage chuẩn VIA Việt thật.</li>
-                        <li>Tăng Like, Comment bài viết bán hàng tự động theo tháng (Bot Like/Comment).</li>
-                        <li>Tăng Mắt Livestream ổn định, chống tụt mắt giúp chốt đơn cao.</li>
-                        <li>Tăng View Video, Reels đẩy xu hướng tìm kiếm.</li>
-                    </ul>
-                </div>
+.avatar {
+    width: 95px;
+    height: 95px;
+    background: #eab308;
+    color: #0f172a;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.3);
+}
 
-                <div class="service-item">
-                    <h3>2. Mở Khóa & Bảo Mật Tài Khoản Cấp Tốc</h3>
-                    <ul>
-                        <li>Xử lý mở khóa checkpoint: Khóa 282 (Xác minh khuôn mặt), Khóa 956 (Két sắt).</li>
-                        <li>Lấy lại Facebook bị Hack, đổi SĐT/Email, bị gỡ mã 2FA.</li>
-                        <li>Cài đặt bảo mật 3 lớp chống Rip, chống Dò mật khẩu, chống Giả mạo.</li>
-                        <li>Khôi phục Fanpage / Group bị kích quyền Quản trị viên.</li>
-                    </ul>
-                </div>
+.sidebar h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
 
-                <div class="service-item">
-                    <h3>3. Phát Triển Fanpage & Chạy Quảng Cáo Facebook</h3>
-                    <ul>
-                        <li>Đổi tên Fanpage quá giới hạn, đổi URL ngắn gọn chuyên nghiệp.</li>
-                        <li>Khôi phục Fanpage bị hủy đăng, hạn chế quảng cáo.</li>
-                        <li>Tư vấn & Setup chiến dịch Chạy Quảng Cáo Facebook Ads tối ưu chi phí.</li>
-                        <li>Hỗ trợ lên Tích Xanh chính chủ cho Cá nhân / Doanh nghiệp.</li>
-                    </ul>
-                </div>
-            </section>
+.sidebar .role {
+    color: #eab308;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-            <section>
-                <h2>QUY TRÌNH TƯ VẤN & BÀN GIAO</h2>
-                <ol>
-                    <li><strong>Bước 1: Tiếp nhận yêu cầu:</strong> Khách hàng liên hệ qua Hotline/Zalo <strong>0326528628</strong> hoặc Email <strong>dtc235180145@ictu.edu.vn</strong> để gửi thông tin cần hỗ trợ.</li>
-                    <li><strong>Bước 2: Phân tích & Báo giá:</strong> Đặng Minh Phương kiểm tra tình trạng tài khoản/trang và tư vấn gói dịch vụ phù hợp kèm báo giá minh bạch.</li>
-                    <li><strong>Bước 3: Tiến hành thực hiện:</strong> Hệ thống bắt đầu xử lý ngay sau khi chốt phương án. Khách hàng theo dõi tiến độ trực tiếp.</li>
-                    <li><strong>Bước 4: Bàn giao & Bảo hành:</strong> Nghiệm thu kết quả, hướng dẫn khách hàng sử dụng an toàn và kích hoạt chính sách bảo hành.</li>
-                </ol>
-            </section>
+.sidebar section {
+    margin-top: 30px;
+}
 
-            <section>
-                <h2>CÂU HỎI THƯỜNG GẶP (FAQ)</h2>
-                <div class="faq-item">
-                    <h4>Q: Tăng Follow / Like có bị khóa tài khoản không?</h4>
-                    <p>A: Hoàn toàn không. Dịch vụ sử dụng hệ thống tương tác tự nhiên, an toàn 100% theo tiêu chuẩn cộng đồng của Facebook.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: Thời gian mở khóa Facebook bị Hack/Khóa mất bao lâu?</h4>
-                    <p>A: Tùy theo dạng khóa (282, 956,...), thời gian xử lý thường từ 15 phút đến 24h làm việc.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: Làm sao để đăng ký dịch vụ tại Thái Nguyên hoặc từ xa?</h4>
-                    <p>A: Bạn chỉ cần gọi hoặc nhắn Zalo đến <strong>0326528628</strong>, dịch vụ hỗ trợ online toàn quốc 24/7 nhanh chóng.</p>
-                </div>
-            </section>
-        </main>
-    </div>
-</body>
-</html>
+.sidebar h2 {
+    font-size: 16px;
+    color: #38bdf8;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    word-break: break-word;
+}
+
+/* Nội dung chính bên phải */
+.main-content {
+    flex: 2 1 550px;
+    padding: 35px;
+}
+
+.main-content section {
+    margin-bottom: 35px;
+}
+
+.main-content h2 {
+    font-size: 19px;
+    color: #eab308;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 8px;
+}
+
+.main-content p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+/* Danh mục dịch vụ */
+.service-item {
+    background: #0f172a;
+    padding: 18px 20px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border-left: 4px solid #38bdf8;
+}
+
+.service-item h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Xóa dấu chấm bullet và căn chỉnh lề thụt vào chuẩn */
+.service-item ul {
+    list-style: none; /* Bỏ chấm tròn */
+    padding-left: 0;
+}
+
+.service-item li {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Thêm icon mũi tên nhỏ làm điểm nhấn thay cho chấm tròn */
+.service-item li::before {
+    content: "➢";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-size: 12px;
+}
+
+/* Xóa số thứ tự bị thò ra ngoài */
+ol {
+    list-style: none; /* Bỏ số mặc định */
+    padding-left: 0;
+}
+
+ol li {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 14px;
+    background: #0f172a;
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+/* FAQ */
+.faq-item {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.faq-item h4 {
+    color: #38bdf8;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Responsive di động */
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+    }
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #334155;
+    }
+}
